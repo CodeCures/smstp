@@ -23,6 +23,11 @@ class EmailRequest extends FormRequest
      */
     public function rules()
     {
-        return [];
+        return [
+            'from' => 'required|email',
+            'to' => 'required|email',
+            'subject' => 'required',
+            'message' => 'required'
+        ];
     }
 }
