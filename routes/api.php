@@ -12,4 +12,7 @@
 |
 */
 
+use Illuminate\Routing\Route;
+
+Route::post('mail/send', EmailController::class);
 
