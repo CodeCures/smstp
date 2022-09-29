@@ -12,7 +12,8 @@
 |
 */
 
-use Illuminate\Routing\Route;
+use App\Http\Controllers\EmailController;
+use Illuminate\Support\Facades\Route;
 
 Route::post('mail/send', EmailController::class);
 
